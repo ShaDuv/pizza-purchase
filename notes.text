@@ -1,0 +1,15 @@
+object for toppings
+object for size
+
+constructor for pizza
+
+input for pizza will be
+select size
+output will be to add size to the constructor
+
+input will be
+add toppings
+output will be
+add toppings to the constructor
+
+price will display at the bottom in live update time
