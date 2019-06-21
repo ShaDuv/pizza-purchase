@@ -2,7 +2,7 @@
 // -- Pizza Constructor -- //
 function PizzaConst(initialPrice, toppings, size) {
   this.base = base,
-  this.addons = []
+  this.addons = [];
 };
 
 const addons = {
@@ -21,13 +21,16 @@ const baseprice = 4.00;
 
 
 //-------------User Logic--------------//
-$(document).ready(function () {
-  $('#magic-pizza-button').submit(function () {
-    event.preventDefault();
-    var userAddons = $(input:checked).name(){
-      console.log(userAddons);
+$(document).ready(function() {
+  console.log("jquery is working");
+  $('#magic-pizza-button').click(function () {
+    console.log("button click is working");
+    function checkboxHandlers() {
+      var checked = [];
+      $("input[name = 'addons': checked").each(function() {
+        checked.push($(this).val());
+        console.log(checked);
+      });
     };
-
   });
-
 });
