@@ -22,15 +22,11 @@ const baseprice = 4.00;
 
 //-------------User Logic--------------//
 $(document).ready(function() {
-  console.log("jquery is working");
-  $('#magic-pizza-button').click(function () {
-    console.log("button click is working");
-    function checkboxHandlers() {
+  $('#magic-pizza-button').click(function() {
       var checked = [];
-      $("input[name = 'addons': checked").each(function() {
+      $("input[name='addons']:checked").each(function() {
         checked.push($(this).val());
         console.log(checked);
       });
-    };
-  });
+    });
 });
