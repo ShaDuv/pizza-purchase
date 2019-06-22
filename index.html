@@ -1,31 +1,58 @@
 <!DOCTYPE html>
 <html lang="" dir="ltr">
-  <head>
-    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <meta charset="utf-8">
-    <title>Pizza Please</title>
-  </head>
-  <body>
-    <h1>Pizza Please!</h1>
-    <form class="form" action="index.html" method="post">
-      <div class="form-group toppings form-check">
-        <input type="checkbox" name="addons" value="cheese">Cheese
-        <input type="checkbox" name="addons" value="olives">Olives
-        <input type="checkbox" name="addons" value="pepperoni">Pepperoni
-        <input type="checkbox" name="addons" value="bacon">Bacon
-        <input type="checkbox" name="addons" value="chicken">Chicken
-        <input type="checkbox" name="addons" value="peppers">Peppers
+<head>
+  <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <meta charset="utf-8">
+  <title>Pizza Please</title>
+</head>
+<body>
+  <div class="row">
+    <div class="col-md-2">
     </div>
-    <div class="form-group form-check" class="sizes">
-      <label for="size">Size</label>
-      <input type="radio" name="sizes" value="small" checked> Small
-      <input type="radio" name="sizes" value="medium"> Medium
-      <input type="radio" name="sizes" value="large"> Large
+    <div class="col-md-8 form-box">
+      <h1>Pizza Please!</h1>
+      <form class="form" id="form" action="index.html" method="post">
+
+        <div class="contact">
+          <label for="first-name">First Name</label>
+          <input id="first" type="text" name="user-first-name" value=""><br>
+
+          <label for="last-name">Last Name</label>
+          <input id="last" type="text" name="user-last-name" value="">
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="tel" name="user-phone" value="">
+
+          <label for="address">Delivery Address</label>
+          <input id="address" type="text" name="user-address" value="">
+
+        </div>
+        <div id="toppings" class="form-group toppings form-check input-group">
+          <input type="checkbox" name="addons" value="cheese"> Cheese
+          <input type="checkbox" name="addons" value="olives"> Olives
+          <input type="checkbox" name="addons" value="pepperoni"> Pepperoni
+          <input type="checkbox" name="addons" value="bacon"> Bacon
+          <input type="checkbox" name="addons" value="chicken"> Chicken
+          <input type="checkbox" name="addons" value="peppers"> Peppers
+        </div>
+        <div class="form-group form-check" class="sizes">
+          <label for="size">Size</label>
+          <input type="radio" name="sizes" value="small" checked> Small
+          <input type="radio" name="sizes" value="medium"> Medium
+          <input type="radio" name="sizes" value="large"> Large
+        </div>
+      </form>
+      <button id="magic-pizza-button" class="btn btn-success" type="submit" name="button">Build My Pizza!</button>
+      <div class="output large">
+      
+      </div>
     </div>
-    <button id = "magic-pizza-button" class="btn btn-success" type="button" name="button">Build My Pizza!</button>
-    </form>
-  </body>
+    <div class="col-md-2">
+    </div>
+  </div>
+
+</body>
 </html>

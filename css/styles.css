@@ -1,1 +1,13 @@
+body {
+  background: url(../img/pizza.jpg);
+  background-size: cover;
+}
+.form-box {
+  background-color: white;
+  padding: 10px;
 
+
+}
+.large {
+  font-size: large;
+}
