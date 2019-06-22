@@ -6,7 +6,7 @@
 
 ## Description
 
-_This web application can be found at hhttps://github.com/ShaDuv/pizza-purchase for the repository.
+_This web application can be found at https://github.com/ShaDuv/pizza-purchase for the repository.
 
 This is a simple web application that takes information from the user and passes it into constructors in order to build an order of pizza with the total being based upon what size and toppings they select.
 
